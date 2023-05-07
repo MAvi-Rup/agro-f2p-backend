@@ -36,59 +36,6 @@ async function run() {
       res.send(result);
     });
 
-
-
-    // app.delete('/delete-farmer/:id', async (req, res) => {
-    //   const id = req.params.id;
-    //   const query = { _id: ObjectId(id) };
-    //   const result = await farmersCollection.deleteOne(query);
-    //   res.send(result);
-    // });
-
-    // app.get('/edit-farmers/:id', async (req, res) => {
-    //   const id = req.params.id;
-    //   const query = { _id: ObjectId(id) };
-    //   const farmer = await farmersCollection.findOne(query);
-    //   res.send(farmer);
-    // });
-
-    // app.put('/update-farmer/:id', async (req, res) => {
-    //   const id = req.params.id;
-    //   const query = { _id: ObjectId(id) };
-    //   const newValues = {
-    //     $set: {
-    //       user: req.body.user,
-    //       date: req.body.date,
-    //       farmersName: req.body.farmersName,
-    //       nid: req.body.nid,
-    //       phone: req.body.phone,
-    //       area: req.body.area,
-    //       extensionCenter: req.body.extensionCenter,
-    //       villageName: req.body.villageName,
-    //     },
-    //   };
-    
-    //   const result = await farmersCollection.updateOne(query, newValues);
-    //   res.send(result);
-    // });
-
-    // app.post('/tp-permits', async (req, res) => {
-    //   const transportPermit = req.body;
-    //   const result = await tpCollection.insertOne(transportPermit);
-    //   res.send(result);
-    // });
-
-    // app.get('/all-tp', async (req, res) => {
-    //   const transportPermit = await tpCollection.find().toArray();
-    //   res.send(transportPermit);
-    // });
-    
-    
-    
-    
-    
-    
-
   }
   finally {
 
@@ -99,7 +46,7 @@ run().catch(console.dir);
 
 
 app.get('/', (req, res) => {
-  res.send('Hello From my Agro Trace')
+  res.send('Hello From my Agro Trace F2p')
 })
 
 app.listen(port, () => {
